@@ -1,9 +1,9 @@
 AgenticHire-AI 🚀
-
+---
 AgenticHire-AI is a full-stack AI-powered recruitment platform designed to make hiring faster, smarter, and more structured. It leverages a multi-agent workflow system to help recruiters manage job postings, process candidate applications, parse resumes, match candidates to job requirements, shortlist applicants, and track recruitment activities from a centralized dashboard.
-
+---
 The platform combines a modern Next.js frontend, Express.js backend, MongoDB database, and Qdrant vector database to deliver intelligent candidate evaluation and retrieval-augmented hiring workflows.
-
+---
 ✨ Features
 🔐 Recruiter authentication and authorization
 📋 Job creation and management
