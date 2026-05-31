@@ -1,0 +1,7 @@
+{
+  "decisions": [
+    { "status": "shortlisted", "minimum_score": 80 },
+    { "status": "hold", "minimum_score": 60 },
+    { "status": "rejected", "minimum_score": 0 }
+  ]
+}

@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f8f8;
+  color: #101418;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #ccd4d8;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: white;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-weight: 700;
+  background: #101418;
+  color: white;
+}
+
+.button.secondary {
+  background: white;
+  color: #101418;
+  border: 1px solid #ccd4d8;
+}
+
+.panel {
+  border: 1px solid #d8e0e3;
+  background: white;
+  border-radius: 8px;
+}

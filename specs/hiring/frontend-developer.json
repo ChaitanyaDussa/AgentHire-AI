@@ -1,0 +1,9 @@
+{
+  "role": "Frontend Developer",
+  "required_skills": ["React", "JavaScript", "CSS"],
+  "preferred_skills": ["Next.js", "Tailwind CSS"],
+  "minimum_score": 75,
+  "shortlist_score": 80,
+  "hold_score": 60,
+  "interview_rounds": 2
+}

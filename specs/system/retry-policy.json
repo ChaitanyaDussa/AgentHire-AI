@@ -1,0 +1,6 @@
+{
+  "max_retries": 3,
+  "retry_delay_ms": 5000,
+  "retryable_failures": ["LLM_TIMEOUT", "EMAIL_API_FAILURE", "VECTOR_DB_TIMEOUT"],
+  "non_retryable_failures": ["INVALID_PDF", "MALFORMED_JSON", "INVALID_REQUEST_SCHEMA"]
+}

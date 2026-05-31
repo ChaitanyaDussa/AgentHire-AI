@@ -1,0 +1,8 @@
+{
+  "chunk_sizes": {
+    "resume": 500,
+    "policy": 1000
+  },
+  "top_k": 5,
+  "minimum_similarity": 0.75
+}
