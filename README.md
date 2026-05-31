@@ -1,188 +1,200 @@
-AgenticHire-AI 🚀
+# 🚀 AgenticHire-AI
+
+AI-Powered Multi-Agent Recruitment Platform that automates candidate screening, resume analysis, job matching, shortlisting, and hiring workflows.
+
 ---
-AgenticHire-AI is a full-stack AI-powered recruitment platform designed to make hiring faster, smarter, and more structured. It leverages a multi-agent workflow system to help recruiters manage job postings, process candidate applications, parse resumes, match candidates to job requirements, shortlist applicants, and track recruitment activities from a centralized dashboard.
+
+## 📌 Overview
+
+AgenticHire-AI helps recruiters streamline hiring using AI agents and Retrieval-Augmented Generation (RAG).
+
+The platform can:
+
+* Parse resumes automatically
+* Match candidates with jobs
+* Rank and shortlist applicants
+* Track recruitment workflows
+* Generate hiring insights
+* Automate email communications
+
 ---
-The platform combines a modern Next.js frontend, Express.js backend, MongoDB database, and Qdrant vector database to deliver intelligent candidate evaluation and retrieval-augmented hiring workflows.
+
+## ✨ Features
+
+✅ Recruiter Authentication
+
+✅ Job Creation & Management
+
+✅ Resume Upload & Parsing
+
+✅ AI Candidate Evaluation
+
+✅ Candidate-Job Matching
+
+✅ Automated Shortlisting
+
+✅ Multi-Agent Hiring Workflow
+
+✅ RAG with Qdrant Vector Database
+
+✅ Recruitment Analytics Dashboard
+
+✅ Email Automation
+
 ---
-✨ Features
-🔐 Recruiter authentication and authorization
-📋 Job creation and management
-📄 Candidate application and resume upload
-🤖 AI-powered resume parsing and evaluation
-🎯 Candidate-to-job matching and ranking
-👥 Automated candidate shortlisting
-⚙️ Multi-agent recruitment workflow orchestration
-🔍 RAG (Retrieval-Augmented Generation) using Qdrant
-📊 Recruitment analytics and workflow tracking
-📧 Email automation with Resend
-🐳 Docker support for MongoDB and Qdrant
-🏗️ Tech Stack
-Frontend
-Next.js 15 (App Router)
-React
-Tailwind CSS
-Backend
-Express.js
-Node.js
-Database & Storage
-MongoDB
-Qdrant Vector Database
-AI & Automation
-Multi-Agent Workflow System
-Resume Parsing
-Candidate Matching Engine
-RAG Pipeline
-Communication
-Resend Email Service
-DevOps
-Docker
-Docker Compose
-📁 Project Structure
-AgenticHire-AI/
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* Next.js 15
+* React
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+
+### Vector Database
+
+* Qdrant
+
+### AI Services
+
+* OpenAI
+* RAG Pipeline
+* Multi-Agent System
+
+### Email
+
+* Resend
+
+### DevOps
+
+* Docker
+* Docker Compose
+
+---
+
+## 📂 Project Structure
+
+```bash
+AgenticHire-AI
 │
-├── client/           # Next.js 15 App Router frontend
-├── server/           # Express backend, agents, workflows, RAG, uploads, logs
-├── specs/            # Hiring, workflow, retry, RAG, prompt, and email specifications
+├── client/        # Next.js Frontend
+├── server/        # Express Backend
+├── specs/         # Agent & Workflow Specs
 │
 └── README.md
-🚀 Getting Started
-Prerequisites
+```
 
-Make sure you have installed:
+---
 
-Node.js (v18+ recommended)
-npm
-Docker Desktop
-MongoDB (via Docker)
-Qdrant (via Docker)
-📦 Installation
-1. Clone the Repository
+## 🔄 Hiring Workflow
+
+```text
+Recruiter
+    ↓
+Create Job
+    ↓
+Candidate Applies
+    ↓
+Resume Upload
+    ↓
+Resume Parsing Agent
+    ↓
+Candidate Matching Agent
+    ↓
+Ranking & Shortlisting
+    ↓
+Recruiter Dashboard
+    ↓
+Email Notifications
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
 git clone https://github.com/your-username/AgenticHire-AI.git
 cd AgenticHire-AI
-2. Install Dependencies
+```
+
+### Install Dependencies
+
+```bash
 npm install --prefix client
 npm install --prefix server
-3. Configure Environment Variables
+```
 
-Copy the example environment files:
+### Setup Environment Variables
 
+```bash
 copy client\.env.local.example client\.env.local
+
 copy server\.env.example server\.env
+```
 
-Update the environment variables according to your local setup.
+### Start Databases
 
-🐳 Start Required Services
-
-Launch MongoDB and Qdrant using Docker:
-
+```bash
 docker compose up -d mongo qdrant
+```
 
-Verify running containers:
+### Run Backend
 
-docker ps
-▶️ Run the Application
-Start Backend
+```bash
 npm run dev --prefix server
+```
 
-Backend URL:
+### Run Frontend
 
-http://localhost:5000
-Start Frontend
+```bash
 npm run dev --prefix client
+```
 
-Frontend URL:
+---
 
+## 🌐 Application URLs
+
+Frontend:
+
+```text
 http://localhost:3000
-🔄 Recruitment Workflow
-Recruiter logs in.
-Recruiter creates a job posting.
-Candidates submit applications and resumes.
-AI agents parse resumes and extract candidate data.
-Candidate profiles are embedded and stored in Qdrant.
-Matching engine compares candidates against job requirements.
-Qualified candidates are shortlisted automatically.
-Recruiters review analytics and workflow logs.
-Email notifications are sent throughout the hiring process.
-📊 Core Modules
-Authentication
+```
 
-Secure recruiter login and protected routes.
+Backend:
 
-Job Management
+```text
+http://localhost:5000
+```
 
-Create, update, and manage job openings.
 
-Resume Processing
 
-AI-powered resume parsing and information extraction.
+---
 
-Candidate Matching
+## 🔮 Future Improvements
 
-Semantic matching using embeddings and vector search.
+* AI Interview Assistant
+* Voice-Based Screening
+* ATS Integrations
+* Real-Time Collaboration
+* Advanced Analytics
 
-Multi-Agent System
+---
 
-Coordinated AI agents handling different recruitment tasks.
+## 👨‍💻 Author
 
-Analytics Dashboard
+**Chaitanya Dussa**
 
-Track recruitment performance and workflow progress.
+Passionate about AI, Agentic Systems, Full-Stack Development, and Automation.
 
-Email Automation
-
-Automated candidate and recruiter communication.
-
-🔍 RAG Architecture
-
-The platform uses Retrieval-Augmented Generation (RAG):
-
-Resume embeddings stored in Qdrant
-Semantic search for candidate retrieval
-Context-aware evaluation and matching
-Enhanced recruiter decision support
-📧 Email Integration
-
-Email workflows are powered by Resend and support:
-
-Application acknowledgements
-Shortlisting notifications
-Interview invitations
-Recruitment status updates
-🐳 Docker Support
-
-Start services:
-
-docker compose up -d
-
-Stop services:
-
-docker compose down
-
-View logs:
-
-docker compose logs -f
-📈 Future Enhancements
-AI Interview Assistant
-Voice-based Candidate Screening
-Advanced Hiring Analytics
-ATS Integrations
-Multi-Organization Support
-Real-time Collaboration Features
-🤝 Contributing
-Fork the repository
-Create a feature branch
-git checkout -b feature/new-feature
-Commit changes
-git commit -m "Add new feature"
-Push branch
-git push origin feature/new-feature
-Open a Pull Request
-📄 License
-
-This project is licensed under the MIT License.
-
-👨‍💻 Author
-
-Chaitanya Dussa
-
-Building AI-powered solutions for recruitment, education, automation, and agentic systems.
+GitHub: https://github.com/ChaitanyaDussa
